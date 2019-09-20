@@ -10,6 +10,6 @@ public class OrderController {
     @GetMapping("hi")
     public String hi(){
 
-        return "OK";
+        return "OKOK";
     }
 }

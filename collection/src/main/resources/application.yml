@@ -1,0 +1,22 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://152.136.84.40:3306/hx
+    username: root
+    password: PFcNiwOp
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: collection
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+logging:
+  level:
+    com:
+      mr: debug
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
